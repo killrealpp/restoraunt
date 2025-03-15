@@ -1,0 +1,66 @@
+.get{
+    padding-bottom: 216px;
+    background-color: $bg-color;
+    &__inner{
+        background-color: #6C5FBC;
+        width: 100%;
+        border-radius: 30px;
+        padding: 37px 0 61px 66px;
+        position: relative;
+        overflow: hidden;
+        &::after{
+            position: absolute;
+            content: "";
+            background-image: url('/img/rest/get.svg');
+            right: 0;
+            top: 0;
+            width: 1214px;
+            height: 280px;
+        }
+    }&__title{
+        @extend %poppins-800;
+        font-size: 70px;
+        line-height: 1.5;
+        color: #FFFFFF;
+    }
+    &__item{
+        position: relative;
+    }
+    &__input{
+        padding: 22px 200px 23px 22px;
+        background-color: #fff;
+        border-radius: 15px;
+        @extend %poppins-400;
+        font-size: 17px;
+        letter-spacing: 3%;
+        z-index: 10;
+    }
+    &__btn{
+        padding: 16px 25px;
+        @extend %poppins-500;
+        font-size: 15px;
+        letter-spacing: 3%;
+        text-transform: uppercase;
+        color: #F7F8FA;
+        background-color: $button-Bgcolor;
+        border-radius: 12px;
+        position: absolute;
+        left: 25%;
+        top: 8px;
+        transition: all .3s ease;
+        z-index: 6;
+    }
+
+    &__dish{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            background-image: url('/img/rest/food.png');
+            width: 276px;
+            height: 276px;
+            right: 7%;
+            top: 20%;
+        }
+    }
+}

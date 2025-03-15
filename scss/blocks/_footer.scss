@@ -1,0 +1,33 @@
+.footer{
+    padding: 96px 0 81px;
+    background: #EAEAEA;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+    }
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 29px;
+        border-bottom: 1px solid #818181;
+    }
+    &__bottom{
+        padding-top: 57px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        &-text{
+            @extend %inter-500;
+            font-size: 17px;
+            line-height: 1.5;
+            color: #999999;
+        }
+        &-imgs{
+            display: flex;
+            align-items: center;
+            gap: 54px;
+        }
+    }
+}

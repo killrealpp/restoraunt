@@ -190,17 +190,17 @@ input[type=number] {
   font-weight: 400;
 }
 
-.top__panel-item-text {
+.footer__bottom-text, .top__panel-item-text {
   font-family: "Inter", sans-serif;
   font-weight: 500;
 }
 
-.rest__cart-status {
+.get__input, .rest__cart-status {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 
-.slide__title, .control__board-cart-time, .control__board-cart-text, .rest__link, .top__pro, .top__start, .btn {
+.get__btn, .slide__title, .control__board-cart-time, .control__board-cart-text, .rest__link, .top__pro, .top__start, .btn {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
@@ -213,6 +213,11 @@ input[type=number] {
 .control__board-title {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+}
+
+.get__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
 }
 
 .slide__text-own {
@@ -498,6 +503,39 @@ body {
   line-height: 1.46;
   color: #C5BFED;
   text-align: center;
+}
+
+.footer {
+  padding: 96px 0 81px;
+  background: #EAEAEA;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+}
+.footer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 29px;
+  border-bottom: 1px solid #818181;
+}
+.footer__bottom {
+  padding-top: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer__bottom-text {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #999999;
+}
+.footer__bottom-imgs {
+  display: flex;
+  align-items: center;
+  gap: 54px;
 }
 
 .premium {
@@ -1031,4 +1069,68 @@ body {
 
 .span-rest {
   margin-right: 10px;
+}
+
+.get {
+  padding-bottom: 216px;
+  background-color: #F9F9F9;
+}
+.get__inner {
+  background-color: #6C5FBC;
+  width: 100%;
+  border-radius: 30px;
+  padding: 37px 0 61px 66px;
+  position: relative;
+  overflow: hidden;
+}
+.get__inner::after {
+  position: absolute;
+  content: "";
+  background-image: url("/img/rest/get.svg");
+  right: 0;
+  top: 0;
+  width: 1214px;
+  height: 280px;
+}
+.get__title {
+  font-size: 70px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+.get__item {
+  position: relative;
+}
+.get__input {
+  padding: 22px 200px 23px 22px;
+  background-color: #fff;
+  border-radius: 15px;
+  font-size: 17px;
+  letter-spacing: 3%;
+  z-index: 10;
+}
+.get__btn {
+  padding: 16px 25px;
+  font-size: 15px;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: #F7F8FA;
+  background-color: #6C5FBC;
+  border-radius: 12px;
+  position: absolute;
+  left: 25%;
+  top: 8px;
+  transition: all 0.3s ease;
+  z-index: 6;
+}
+.get__dish {
+  position: relative;
+}
+.get__dish::after {
+  position: absolute;
+  content: "";
+  background-image: url("/img/rest/food.png");
+  width: 276px;
+  height: 276px;
+  right: 7%;
+  top: 20%;
 }/*# sourceMappingURL=main.css.map */
