@@ -1,0 +1,51 @@
+//COLORS
+$bg-color:#F9F9F9;
+$span-color:#6155AE;
+$text-color:#676767;
+$title-color: #201F1F;
+$link-color:#606060;
+$input-color:#878787;
+$input-Bgcolor:#FFFFFF;
+$button-color:#FFFFFF;
+$button-Bgcolor:#6C5FBC;
+
+//CONTAINER
+$padding-container:0px 15px;
+$maxWidth-container:1248px;
+
+//PADDING
+@mixin padding($pt,$pr,$pb,$pl){
+    padding:$pt $pr $pb $pl;
+}
+
+.title{
+    @extend %poppins-600;
+    color:$title-color;
+    letter-spacing: 0;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $button-color;
+    background-color: $button-Bgcolor;
+    @extend %poppins-500;
+    border-radius: 15px;
+    border: none;
+    transition: all .3s ease;
+    &:hover{
+        transform: translateY(-2px);
+    }
+}
+
+.span{
+    color: #5C4EAE;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+.dishes{
+    padding: 100px 0 120px;
+    background-color: $bg-color;
+    border-bottom: 1px solid #CBCBCB;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 45px;
+        line-height: 1.8;
+    }
+    &__carts{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__cart{
+        background-color: #fff;
+        box-shadow: 6px 71px 35px rgba(229, 229, 229, 0.7);
+        border-radius: 35px;
+        &-imgs{
+            position: relative;
+            padding: 26px 18px 0 6px;
+        }
+        &-heart{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 22px;
+            height: 19px;
+        }
+        &-inner{
+            padding: 10px 28px 30px 25px;
+        }
+        &-title{
+            @extend %poppins-600;
+            font-size: 23px;
+            line-height: 1.5;
+        }
+        &-nums{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-sum{
+            color: gray;
+            font-size: 20px;
+            &-b{
+                color: #000;
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.details{
+    margin-bottom: 13px;
+}
