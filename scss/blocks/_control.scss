@@ -241,7 +241,118 @@
     color: #fff;
 }
 
-.red{
-    color: #F1534E;
+@media (max-width:950px){
+    .control{
+        overflow-x: hidden;
+        &__inner{
+            flex-direction: column;
+            gap: 100px;
+        }
+        &__board{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                background-image: url(/img/icon/vector14.svg);
+                background-repeat: no-repeat;
+                width: 170px;
+                height: 155px;
+                bottom: 0%;
+                right: 0;
+                transform: rotate(270deg);
+            }
+        }
+    }
+}
+
+
+@media (max-width:550px){
+    .control{
+        &__dash{
+            padding: 36px 29px 36px 28px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+            border-radius: 25px;
+            box-shadow: 6px 71px 35px rgba(229, 229, 229, 0.7);
+            &-top{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 35px;
+                &-title{
+                    @extend %manrope-800;
+                    font-size: 22px;
+                    line-height: 1.35;
+                    color: #1A202C;
+                }
+            }
+            &-pols{
+    
+            }
+            &-items{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            &-item{
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                border: 2px solid #EDF2F7;
+                border-radius: 25px;
+                gap: 15px;
+                &-details{
+                    display: flex;
+                    align-items: center;
+                    gap: 18px;
+                }
+                &-img{
+    
+                }
+                &-texts{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                }
+                &-title{
+                    @extend %manrope-800;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: 0.63px;
+                }
+                &-text{
+                    @extend %manrope-500;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    letter-spacing: 0.63px;
+                }
+                &-sum{
+                    margin-left: auto;
+                    @extend %manrope-800;
+                    font-size: 17px;
+                    line-height: 1.5;
+                    letter-spacing: 0.31px;
+                }
+            }
+    
+        }
+    }
+    .control__board::after{
+        left: 75%;
+        top: 80%;
+    }
+
+    .dropdown__btn{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 490px){
+    .control__board::after{
+        display: none;
+    }
 }
 

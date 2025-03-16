@@ -15,9 +15,8 @@
         line-height: 1.8;
     }
     &__carts{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
         gap: 30px;
     }
     &__cart{
@@ -27,6 +26,9 @@
         &-imgs{
             position: relative;
             padding: 26px 18px 0 6px;
+        }
+        &-img{
+            width: 100%;
         }
         &-heart{
             position: absolute;
@@ -56,7 +58,19 @@
                 font-size: 28px;
             }
         }
+        &-svg{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #323142;
+            border-radius: 6px; 
+            padding: 9px;
+        }
+        &-plus{
+            color: white;
+        }
     }
+    
 }
 
 .dishes__cart-heart, .dishes__cart-plus{
@@ -68,3 +82,169 @@
     margin-bottom: 13px;
 }
 
+
+@media (max-width: 1140px){
+    .rest__cart-status{
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px 5px;
+    }
+    .rest__cart-details{
+        justify-content: space-between;
+    }
+    .dishes__cart{
+        &-title{
+            font-size: 20px;
+        }
+        &-sum{
+            flex-wrap: nowrap;
+            font-size: 18px;
+            &-b{
+                font-size: 25px;
+            }
+        }
+    }
+    .rest__cart-time{
+        font-size: 18px;
+    }
+    .rest__cart-num{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1045px){
+    .dishes__title{
+        font-size: 32px;
+    }
+    .dishes__cart{
+        &-title{
+            font-size: 18px;
+        }
+        &-sum{
+            font-size: 16px;
+            &-b{
+                font-size: 23px;
+            }
+        }
+    }
+    .rest__cart-time{
+        font-size: 16px;
+    }
+    .rest__cart-num{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 982px){
+    .dishes__cart{
+        &-title{
+            font-size: 16px;
+        }
+        &-sum{
+            font-size: 15px;
+            &-b{
+                font-size: 18px;
+            }
+        }
+        &-svg{
+            padding: 6px;
+        }
+    }
+    .rest__cart-time{
+        font-size: 12px;
+    }
+    .rest__cart-num{
+        font-size: 12px;
+    }
+    .rest__cart-status{
+        padding: 0 2px;
+    }
+}
+
+@media (max-width: 920px){
+    .dishes__carts-inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .none{
+        display: none;
+    }
+    .dishes__carts{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }   
+}
+
+@media (max-width: 710px){
+    .dishes__carts{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .rest__cart-status{
+        padding: 3px 9px 2px 9px;
+        width: 66px;
+        color: #DAA31A;
+        font-size: 13px;
+    }
+    .rest__cart-details{
+        justify-content: flex-start;
+    }
+    .dishes__cart{
+        &-title{
+            font-size: 23px;
+        }
+        &-sum{
+            flex-wrap: nowrap;
+            font-size: 20px;
+            &-b{
+                font-size: 25px;
+            }
+        }
+    }
+    .rest__cart-time{
+        font-size: 20px;
+    }
+    .rest__cart-num{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 456px){
+    .dishes__cart{
+        &-title{
+            font-size: 18px;
+        }
+        &-sum{
+            font-size: 12px;
+            &-b{
+                font-size: 15px;
+            }
+        }
+        &-svg{
+            padding: 5px;
+        }
+    }
+    .rest__cart-time{
+        font-size: 12px;
+    }
+    .rest__cart-num{
+        font-size: 12px;
+    }
+    .rest__cart-status{
+        padding: 0 0;
+    }
+}
+
+@media (max-width: 395px){
+    .dishes__cart{
+        &-title{
+            font-size: 17px;
+        }
+    }
+    .dishes__title{
+        font-size: 30px;
+    }
+}
