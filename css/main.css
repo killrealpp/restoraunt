@@ -316,6 +316,14 @@ body {
   overflow: hidden;
 }
 
+.heart-active path {
+  fill: red !important;
+}
+
+.book-active path {
+  fill: green !important;
+}
+
 .header {
   background-color: #F9F9F9;
 }
@@ -324,6 +332,7 @@ body {
   border-bottom: 1px solid #CBCBCB;
   display: flex;
   align-items: center;
+  gap: 103px;
 }
 .header__details {
   margin-left: auto;
@@ -356,7 +365,6 @@ body {
 
 .menu {
   max-width: 375px;
-  margin-left: 9%;
 }
 .menu__list {
   display: flex;
@@ -687,6 +695,7 @@ body {
 }
 .rest__cart-book {
   margin-left: auto;
+  cursor: pointer;
 }
 .rest__link {
   margin-left: auto;
@@ -768,6 +777,10 @@ body {
 .dishes__cart-sum-b {
   color: #000;
   font-size: 28px;
+}
+
+.dishes__cart-heart, .dishes__cart-plus {
+  cursor: pointer;
 }
 
 .details {

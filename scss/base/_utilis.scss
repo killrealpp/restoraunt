@@ -1,3 +1,11 @@
 .open--menu{
     overflow: hidden;
 }
+
+.heart-active path {
+    fill: red !important;
+}
+
+.book-active path{
+    fill: green !important;
+}
