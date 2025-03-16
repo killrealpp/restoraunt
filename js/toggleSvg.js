@@ -7,7 +7,3 @@ export function toggleClassOnClick(selector, toggleClass){
         })
     })
 }
-
-toggleClassOnClick('.dishes__cart-heart', 'heart-active')
-toggleClassOnClick('.rest__cart-book', 'book-active')
-toggleClassOnClick('.dishes__cart-plus', 'book-active')

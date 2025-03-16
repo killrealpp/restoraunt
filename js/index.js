@@ -1,23 +1,16 @@
-import { initDropdown } from "./dropdown";
-import { initProgressBarAndSwiper } from "./slider";
-import {toggleClassOnClick} from './toggleSvg'
+import { initDropdown } from "./dropdown.js";
+import { initProgressBarAndSwiper } from "./slider.js";
+import {toggleClassOnClick} from './toggleSvg.js'
+import { toggleMenu } from "./burger.js";
 
-initDropdown()
+// initDropdown()
 initProgressBarAndSwiper()
-toggleClassOnClick()
+toggleClassOnClick('.dishes__cart-heart', 'heart-active');
+toggleClassOnClick('.rest__cart-book', 'book-active');
+toggleClassOnClick('.dishes__cart-plus', 'book-active');
+toggleMenu();
 
-// const toggleMenu = () => {
-//     const burgerBtn = document.querySelector('.burger__btn');
-//     const burgerMenu = document.querySelector('.burger__menu');
-//     console.log(burgerBtn)
-//     console.log(burgerMenu)
-//     burgerBtn.addEventListener('click', ()=>{
-//         console.log('click')
-//         burgerMenu.classList.toggle('active')
-//     })
 
-// }
 
-//     toggleMenu();
 
-//     console.log('ffddf')
+

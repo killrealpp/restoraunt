@@ -125,4 +125,13 @@
     .active{
         left: 0;
     }
+
+    
+}
+
+@media (max-width: 375px){
+    .header__inner{
+        padding-top: 33px;
+        border-bottom: none;
+    }
 }

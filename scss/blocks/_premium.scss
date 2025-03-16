@@ -79,3 +79,128 @@
         }
     }
 }
+
+@media (max-width: 1110px){
+    .premium__inner::after{
+        left: 40%;
+    }
+    .premium__content::after{
+        right: 25%;
+    }
+}
+
+@media (max-width: 1000px){
+    .premium__inner::after{
+        left: 43%;
+    }
+    .premium__content::after{
+        right: 20%;
+    }
+}
+
+@media (max-width: 890px){
+    .premium__content::after{
+        right: 5%;
+    }
+    .premium{
+        &__content{
+            &-title{
+                font-size: 40px;
+            }
+            &-text{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 790px){
+    .premium{
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 100px;
+        }
+        &__content{
+            order: 1;
+            &-btn{
+                margin-left: 70px;
+            }
+            &-title{
+                text-align: center;
+                width: 100%;
+                font-size: 40px;
+            }
+        }
+        &__phone{
+            order: 2;
+        }
+    }
+    .premium__content::after {
+        right: 90%;
+        top: 95%;
+        transform: rotate(110deg);
+    }
+    .premium__inner::after{
+        left: 73%;
+        top: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .premium__content{
+        &-btn{
+            margin-left: 40px;
+        }
+    }
+    .premium__content::after {
+        right: 92%;
+        top: 95%;
+        transform: rotate(110deg);
+    }
+    .premium__inner::after{
+        left: 78%;
+        top: 50%;
+    }
+    .premium__phone-img{
+        width: 100%;
+    } 
+}
+
+@media (max-width: 500px){
+    .premium__content{
+        &-btn{
+            margin-left: 0;
+        }
+        &-title{
+            font-size: 30px;
+        }
+        &-text{
+            font-size: 12px;
+        }
+        &-btn{
+            padding: 13px 43px 13px 17px
+        }
+    }
+    .premium__content::after {
+        right: 105%;
+        top: 95%;
+        transform: rotate(110deg);
+    }
+    .premium__inner::after{
+        left: 80%;
+        top: 60%;
+    }
+    .premium__content-btn::after{
+        top: 23%;
+    }
+}
+
+@media (max-width: 375px){
+    .premium__inner::after{
+        left: 80%;
+        top: 67%;
+    }
+}

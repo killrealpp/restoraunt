@@ -43,5 +43,3 @@ export function initProgressBarAndSwiper() {
     initSwiper();
     setWidthProgresBar();
 }
-
-initProgressBarAndSwiper();
