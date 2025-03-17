@@ -89,23 +89,48 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.span-rest{
-    margin-right: 10px;
+@media (max-width: 900px){
+    .slide{
+        &__inner{
+            gap: 15px;
+        }
+        &__text-own{
+            font-size: 15px;
+        }
+    }
+    .swiper-slide {
+        padding: 28px 33px 28px 33px;
+        background-color: #fff;
+        border-radius: 21px;
+        box-shadow: 6px 71px 35px rgba(229, 229, 229, 0.7);
+        max-width: 428px;
+    }
 }
+
+@media (max-width: 606px){
+    .swiper-scrollbar{
+        display: none;
+    }
+    .swiper-slide {
+        padding: 23px 28px 23px 38px;
+        background-color: #fff;
+        border-radius: 21px;
+        box-shadow: 6px 71px 35px rgba(229, 229, 229, 0.7);
+        max-width: 358px;
+    }
+    .slide{
+        &__inner{
+            gap: 12px;
+        }
+        &__text-own{
+            font-size: 12px;
+        }
+        &__title{
+            font-size: 14px;
+        }
+        &__text{
+            font-size: 12px;
+        }
+    }
+}
+

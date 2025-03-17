@@ -31,3 +31,32 @@
         }
     }
 }
+
+.footer__media{
+    padding: 96px 0 81px;
+    background: #EAEAEA;
+    &__inner-media{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__top-media-item{
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+    &__top-media{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+@media (max-width: 800px){
+    .footer__menu{
+        display: block;
+    }
+}
